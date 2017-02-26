@@ -251,6 +251,18 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FxA-o6-H7r">
+                                <rect key="frame" x="117" y="520" width="86" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="DWh-9D-FH2"/>
+                                    <constraint firstAttribute="width" constant="86" id="uYc-H3-i3q"/>
+                                </constraints>
+                                <state key="normal" image="clear"/>
+                                <connections>
+                                    <action selector="onClearPressedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Odu-cx-oBi"/>
+                                    <action selector="onEqualPressedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vbm-3Y-AGt"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -270,6 +282,8 @@
                             <constraint firstItem="DzA-O1-lE0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="9" id="h4l-uP-vfg"/>
                             <constraint firstAttribute="trailingMargin" secondItem="DzA-O1-lE0" secondAttribute="trailing" constant="7" id="iEf-4u-9E2"/>
                             <constraint firstItem="e1j-zy-aZf" firstAttribute="top" secondItem="Dcp-6Z-t6J" secondAttribute="bottom" constant="40" id="nUY-OC-Kpu"/>
+                            <constraint firstItem="FxA-o6-H7r" firstAttribute="top" secondItem="DzA-O1-lE0" secondAttribute="bottom" constant="48" id="pFF-YS-dYT"/>
+                            <constraint firstItem="FxA-o6-H7r" firstAttribute="centerX" secondItem="e1j-zy-aZf" secondAttribute="centerX" id="tOc-5Y-KeO"/>
                             <constraint firstAttribute="trailing" secondItem="aHb-S3-gt5" secondAttribute="trailing" id="uPu-pp-JJ6"/>
                             <constraint firstItem="kux-D4-wZs" firstAttribute="leading" secondItem="Dcp-6Z-t6J" secondAttribute="leading" id="y6F-7d-bhV"/>
                         </constraints>
@@ -280,7 +294,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="138.75" y="138.75"/>
+            <point key="canvasLocation" x="138.75" y="138.38028169014083"/>
         </scene>
     </scenes>
     <resources>
@@ -296,6 +310,7 @@
         <image name="9" width="111" height="114"/>
         <image name="add" width="111" height="114"/>
         <image name="backpanel" width="620" height="938"/>
+        <image name="clear" width="333" height="114"/>
         <image name="counter" width="516" height="133"/>
         <image name="divide" width="111" height="114"/>
         <image name="equal" width="111" height="114"/>
